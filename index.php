@@ -31,18 +31,16 @@ switch ($day) {
         break;
     default:
         echo "DevOps services is a great tool all days of the week!";
-}
 	}
+}
 
 
 echo api::$command($whichDay);
 
 class api{
 	static function tipOfTheDay($whichDay){
-		
-		
-		
-		return  $outputText1 + $whichDay + "" generateTip($whichDay);
+	
+		return  $whichDay;
 	}
 }
 
