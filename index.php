@@ -1,11 +1,13 @@
-<?php echo "This application provides an API for testing"; 
+<?php 
+echo "This application provides an API for testing \n"; 
+echo "Output from api:\n"; 
 $command = $_REQUEST['command'];
-$param = $_REQUEST['param'];
-echo api::$command($param);
+$whichDay = $_REQUEST['whichDay'];
+echo api::$command($whichDay);
 
 class api{
-	static function tipOfTheDay($param){
-		return $param;
+	static function tipOfTheDay($whichDay){
+		return 'DevOps services is a great tool';
 	}
 }
 
